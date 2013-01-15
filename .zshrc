@@ -41,3 +41,5 @@ source ~/.nvm/nvm.sh
 # Sublime Text 2
 alias sublime='open -a Sublime\ Text\ 2'
 
+# StarCraft II
+alias sc2='/Applications/StarCraft\ II/StarCraft\ II.app/Contents/MacOS/StarCraft\ II'
