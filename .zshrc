@@ -38,8 +38,8 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 # node.js
 source ~/.nvm/nvm.sh
 
-# Sublime Text 2
-alias sublime='open -a Sublime\ Text\ 2'
+# Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin 
 
-# StarCraft II
-alias sc2='/Applications/StarCraft\ II/StarCraft\ II.app/Contents/MacOS/StarCraft\ II'
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
