@@ -70,7 +70,7 @@ EXEC 01;32
 .com 01;32
 .btm 01;32
 .bat 01;32
-.sh01;32
+.sh 01;32
 .csh 01;32
 .tar 01;31 # archives or compressed (bright red)
 .tgz 01;31
@@ -80,10 +80,10 @@ EXEC 01;32
 .zip 01;31
 .z 01;31
 .Z 01;31
-.gz01;31
+.gz 01;31
 .bz2 01;31
-.bz01;31
-.tz01;31
+.bz 01;31
+.tz 01;31
 .rpm 01;31
 .cpio 01;31
 .jpg 01;35 # image formats
