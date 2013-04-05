@@ -10,6 +10,12 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
+# Alias
+alias rm="rm -i"
+alias cp="cp -i"
+alias mv="mv -i"
+alias rr="rm -irf"
+
 # Key Binding
 bindkey "\e[Z" reverse-menu-complete
 
