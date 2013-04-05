@@ -14,7 +14,7 @@ HISTFILE=~/.zsh_history
 alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
-alias rr="rm -ir"
+alias rr="rm -r"
 alias la="ls -la"
 
 # Key Binding
@@ -29,7 +29,6 @@ zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' menu select=2
-eval "$(dircolors ~/.dir_colors -b)"
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
@@ -42,3 +41,15 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
+# OSX or Linux
+case ${OSTYPE} in
+  darwin*)
+    eval $(gdircolors ~/Preferences/dircolors.ansi-universal)
+    export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+    alias ls="gla"
+    alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+  ;;
+  linux*)
+    eval "$(dircolors ~/Preferences/dircolors.ansi-universal -b)"
+  ;;
+esac  
