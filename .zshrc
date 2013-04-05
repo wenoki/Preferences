@@ -15,6 +15,7 @@ alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
 alias rr="rm -ir"
+alias la="ls -la"
 
 # Key Binding
 bindkey "\e[Z" reverse-menu-complete
