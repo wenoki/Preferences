@@ -26,7 +26,7 @@ compinit
 
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
-zstyle ':completion:*' format 'Completing %d'
+zstyle ':completion:*' format 'Completing %B%d%b'
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' menu select=2
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
@@ -46,7 +46,7 @@ case ${OSTYPE} in
   darwin*)
     eval $(gdircolors ~/Preferences/dircolors.ansi-universal)
     export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-    alias ls="gla"
+    alias ls="gls"
     alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
   ;;
   linux*)
