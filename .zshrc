@@ -14,7 +14,7 @@ HISTFILE=~/.zsh_history
 alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
-alias rr="rm -irf"
+alias rr="rm -ir"
 
 # Key Binding
 bindkey "\e[Z" reverse-menu-complete
