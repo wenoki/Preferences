@@ -11,7 +11,6 @@ SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
 # Alias
-alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
 alias rr="rm -r"
