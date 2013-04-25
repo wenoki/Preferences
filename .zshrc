@@ -16,6 +16,8 @@ alias mv="mv -i"
 alias rr="rm -r"
 alias la="ls -la"
 
+alias crontab="crontab -i"
+
 # Key Binding
 bindkey "\e[Z" reverse-menu-complete
 
