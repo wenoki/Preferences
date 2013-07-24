@@ -49,8 +49,11 @@ case ${OSTYPE} in
     export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
     alias ls="gls"
     alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+
+    export JAVA_HOME=`/usr/libexec/java_home`
+    export JAVA=$JAVA_HOME/bin
   ;;
   linux*)
     eval "$(dircolors ~/Preferences/dircolors.ansi-universal -b)"
   ;;
-esac  
+esac
