@@ -15,6 +15,7 @@ alias cp="cp -i"
 alias mv="mv -i"
 alias rr="rm -r"
 alias la="ls -la"
+alias be="bundle exec"
 
 alias crontab="crontab -i"
 
