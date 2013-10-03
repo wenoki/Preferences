@@ -16,6 +16,7 @@ alias mv="mv -i"
 alias rr="rm -r"
 alias la="ls -la"
 alias be="bundle exec"
+alias bi="bundle install --path=./vendor/bundle"
 
 alias crontab="crontab -i"
 
