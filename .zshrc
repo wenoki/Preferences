@@ -15,6 +15,8 @@ alias cp="cp -i"
 alias mv="mv -i"
 alias rr="rm -r"
 alias la="ls -la"
+alias be="bundle exec"
+alias bi="bundle install --path=./vendor/bundle"
 
 alias crontab="crontab -i"
 
@@ -47,11 +49,13 @@ case ${OSTYPE} in
   darwin*)
     eval $(gdircolors ~/Preferences/dircolors.ansi-universal)
     export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-    alias ls="gls"
     alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+
+    export JAVA_HOME=`/usr/libexec/java_home`
+    export JAVA=$JAVA_HOME/bin
   ;;
   linux*)
     eval "$(dircolors ~/Preferences/dircolors.ansi-universal -b)"
     export LC_CTYPE="ja_JP.UTF-8"
   ;;
-esac  
+esac
