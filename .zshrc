@@ -52,5 +52,6 @@ case ${OSTYPE} in
   ;;
   linux*)
     eval "$(dircolors ~/Preferences/dircolors.ansi-universal -b)"
+    export LC_CTYPE="ja_JP.UTF-8"
   ;;
 esac  
