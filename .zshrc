@@ -48,7 +48,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 case ${OSTYPE} in
   darwin*)
     eval $(gdircolors ~/Preferences/dircolors.ansi-universal)
-    export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+    export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$PATH"
     alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 
     export JAVA_HOME=`/usr/libexec/java_home`
