@@ -1,0 +1,15 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+	"detect_indentation": true,
+	"font_face": "Ricty",
+	"font_size": 12.5,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		""
+	],
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
+}
