@@ -1,8 +1,9 @@
 {
+	"theme": "Soda Dark.sublime-theme",
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
 	"detect_indentation": true,
 	"font_face": "Ricty",
-	"font_size": 12.5,
+	"font_size": 13,
 	"highlight_line": true,
 	"ignored_packages":
 	[
