@@ -19,6 +19,7 @@ alias be="bundle exec"
 alias bi="bundle install --path=./vendor/bundle"
 
 alias crontab="crontab -i"
+alias myip="curl ifconfig.me"
 
 # Key Binding
 bindkey "\e[Z" reverse-menu-complete
